@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div id="add-book">
+    <table>
+        <tr>
+            <td>
+                <label for="name">Book name:</label><br><input id="name" type="text" name="name"/>
+            </td>
+            <td>
+                <label for="author">Author name:</label><br><input id="author" type="text" name="author"/>
+            </td>
+            <td>
+                <label for="description">Description:</label><br><input id="description" type="text" name="description"/>
+            </td>
+            <td>
+                <label for="category">Category:</label><br>
+                <select id="category">
+                    <option value=0>Thriller</option>
+                    <option value=1>History</option>
+                    <option value=2>Drama</option>
+                    <option value=3>Biography</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary btn-md" onclick="AddBook()">
+                    Add book
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="book-list">
+
+</div>
